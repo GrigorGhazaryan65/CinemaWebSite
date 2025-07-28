@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    padding: 0 88px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.header__container {
+    width: 100%;
+    height: 81px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0;
+}
+
+.logo {
+    width: 90px;
+    height: 70px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__link {
+    color: white;
+}
+
+.menu__link:hover {
+    color: #c8ff00;
+}
+
+.hero-image {
+    width: 100%;
+    height: 900px;
+    background-image: url(img/header-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 90px;
+    height: 70px;
+}
+
+.movie-details {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.movie-poster-large {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+}
+
+.movie-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.movie-overview {
+    margin: 16px auto 32px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e50914;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #f40612;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 64px 0 32px;
+    font-size: 14px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer-logo {
+    margin-bottom: 32px;
+}
+
+.footer-slogan {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.footer-heading {
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 13px;
+}
+
+.footer-link {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #e50914;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 19px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 16px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+.newsletter-form button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    [class*="__container"] {
+        padding: 0 20px;
+    }
+    
+    .movie-poster-large {
+        width: 250px;
+    }
+    
+    .movie-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-poster-large {
+        width: 200px;
+    }
+    
+    .movie-title {
+        font-size: 21px;
+    }
+    
+    .movie-overview {
+        font-size: 14px;
+    }
+    
+    .back-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
